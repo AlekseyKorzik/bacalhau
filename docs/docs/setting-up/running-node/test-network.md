@@ -7,7 +7,7 @@ sidebar_position: 155
 
 Before you join the demo Bacalhau network or any private network, you can test locally.
 
-To test, you can set environment variable `export PREDICTABLE_API_PORT=1` to point devstack to run on port 20000 and execute the `bacalhau devstack` command, which runs locally a cluster of 4 nodes - one requester and 3 compute. 
+To test, you can set environment variable `export PREDICTABLE_API_PORT=1` to point devstack to run on port 20000 and execute the `bacalhau devstack` command, which runs locally a cluster of 4 nodes: one requester and 3 compute. 
 
 ```bash
 export PREDICTABLE_API_PORT=1
@@ -24,7 +24,7 @@ export BACALHAU_API_PORT=20000
 Done! You can now interact with Bacalhau. All jobs will be routed to the local cluster and you can see the logs of their reception and execution.
 
 ```bash
-bacalhau docker run alpine echo hello
+bacalhau docker run ubuntu echo hello
 bacalhau list
 ```
 
